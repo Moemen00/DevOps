@@ -43,7 +43,7 @@ pipeline {
 
     post {
         failure {
-            mail to: 'TON_EMAIL@gmail.com',
+            mail to: 'samaali.moemen@esprit.tn',
                  subject: "Build ECHOUE : ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                  body: "La construction a echoue.\nDetails : ${env.BUILD_URL}console"
         }
